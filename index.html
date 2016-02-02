@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>HomePage</title>
+	    <link href="style.css" rel="stylesheet" type="text/css" />
+	    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
+	</head>
+	<body onload="displayHeader(); getStocks(); getTime(); getWeather();">
+		<div id="sidebar">						
+			<div id="clock"></div>
+			<div id = "items">
+				<!-- Sidebar generated here in menuContents.js -->
+			</div>
+			<div id = "weather"></div>
+			<div id = "ticker"></div>
+		</div>
+		<div id="main">
+			<div id="greeting"></div>
+		</div>
+	</body>
+
+	<script src="res/jquery-2.2.0.min.js"></script>
+	<script src="dropdownJSON.js"></script>
+	<script src="time.js"></script>
+	<script src="menuContents.js"></script>
+	<script src="stock.js"></script>
+	<script src="weather.js"></script>
+	<script src="mobileDetect.js"></script>
+</html>

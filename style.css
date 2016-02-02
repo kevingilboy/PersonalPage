@@ -1,0 +1,116 @@
+@CHARSET "ISO-8859-1";
+
+body{
+	margin:0;
+	background: #FFFFF;
+	background-image: url("res/sunrise.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Ubuntu', serfif;
+    color:#FFFFFF
+}
+
+#sidebar{
+	float:left;
+	background:rgba(70,70,70,0.5);
+	position:absolute;
+	width:200px;
+	height:100%;	
+}
+
+#main{	
+	height:100%;
+	padding-left:200px;		
+}
+
+#greeting{
+	padding-top:1em;
+	padding-left:1em;
+	font-size:4em;
+}
+
+hr{
+	margin-top:2px;
+	margin-bot: 2px;
+	border:0;
+	height:1px;
+}
+
+#clock{
+	font-size:3em;
+	top:0;	
+	text-align:center;
+	margin-top:1em;
+	margin-bottom:1em;
+}
+
+#ticker{
+	position:absolute;
+	bottom:0;
+}
+
+#weather{
+	position:absolute;
+	bottom:28;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;    
+    width:100%;
+    
+    /*background-color: rgba(38,38,38,0.5);*/
+    color: white;
+    font-size: 16px;
+    
+    border: none;
+    cursor: pointer; 
+    
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    left:100%;
+    top:0;
+    background-color:rgba(38,38,38,0.5);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 0px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: rgba(28,28,28,0.2);
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover {
+   background-color: rgba(28,28,28,0.2);
+}
+
+.mainNode {
+	/*background-color: rgba(38,38,38,0.5);	*/
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left:5%;
+	width:95%;
+	opacity:.5;
+}
+
+.contains::after{
+	position:relative;
+	float:right;
+	margin-right:10px;
+	content: ">";
+}
