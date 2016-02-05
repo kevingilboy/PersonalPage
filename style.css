@@ -87,6 +87,7 @@ hr{
     padding: 12px 0px;
     text-decoration: none;
     display: block;
+    width:90%;
 }
 
 /* Change color of dropdown links on hover */
@@ -109,9 +110,12 @@ hr{
 }
 
 .contains::after{
-	position:relative;
 	float:right;
 	margin-right:10px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
 	content: ">";
 }
 
