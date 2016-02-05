@@ -114,3 +114,12 @@ hr{
 	margin-right:10px;
 	content: ">";
 }
+
+td, th, tr{
+	padding:0px;
+	max-width:100%;
+	width:auto;
+	height:auto;
+	white-space:nowrap;
+	text-align:center;
+}
