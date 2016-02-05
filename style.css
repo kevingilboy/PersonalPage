@@ -87,7 +87,7 @@ hr{
     padding: 12px 0px;
     text-decoration: none;
     display: block;
-    width:90%;
+    padding-right:10px;
 }
 
 /* Change color of dropdown links on hover */
