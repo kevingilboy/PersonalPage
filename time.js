@@ -2,8 +2,8 @@ var name = "Kevin";
 
 function displayHeader(){
 	var d = new Date();
-	if(d.getHours()<12) document.getElementById("greeting").innerText = "Good Morning, " + name;
-	else if(d.getHours()<17) document.getElementById("greeting").innerText = "Good Afternoon, " + name;
+	if(d.getHours()<12 && d.getHours()>3) document.getElementById("greeting").innerText = "Good Morning, " + name;
+	else if(d.getHours>=12 && d.getHours()<17) document.getElementById("greeting").innerText = "Good Afternoon, " + name;
 	else document.getElementById("greeting").innerText = "Good Evening, " + name;
 }
 
