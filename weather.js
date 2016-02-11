@@ -27,7 +27,7 @@ function getWeather() {
 	//Fetch 5 day forecast info in JSON format
 	var url = 'http://api.openweathermap.org/data/2.5/forecast/daily?lat=40.44062&lon=-79.995888&cnt=5&mode=json&appid=3aa8d2b200ad314410e9340650ad4140';
 	$.getJSON(url, function(weather){
-		var weatherToolTipHTML = "<table style=\"border:0px; color:black\">";
+		var weatherToolTipHTML = "<table class=\"weatherTooltip\" style=\"color:black\">";
 		var datesHTML="";
 		var iconHTML="";
 		var tDayHTML="";
